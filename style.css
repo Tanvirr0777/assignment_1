@@ -91,6 +91,7 @@ ul li a{
 .bt img{
     max-width: 16px;
     max-height: 16px;
+    margin-right:6px ;
 }
 
 
@@ -327,7 +328,7 @@ footer .copy{
     text-align: center;
 }
 
-.btn:hover,.bt:hover,.play:hover{
+.btn:hover,.bt:hover,.play:hover,.social-icons a i:hover{
     transition: all 0.3s ease;
     transform: scale(1.05);
     box-shadow: 0px 4px 4px 4px brown;
