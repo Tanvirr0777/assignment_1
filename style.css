@@ -4,14 +4,14 @@
   
 }
 
-body{
+*{
     max-width: 1600px;
     padding: 0;
     margin: 0;
 }
 
 header{
-    width: 1600px;
+    max-width: 1600px;
     background-color: #FFFFFF;
 }
 
@@ -57,6 +57,7 @@ ul li a{
 .banner{
     background-image: url("hero_bg.png");
     background-repeat: no-repeat;
+    background-size: contain;
     vertical-align: middle;
     max-width: 1600px;
 }
@@ -84,7 +85,7 @@ ul li a{
     border-radius: 20px;
     align-items: center;
     margin: 0px auto 16px;
-   
+    cursor: pointer;
 }
 
 .bt img{
@@ -105,16 +106,10 @@ ul li a{
 .headline span{
     color: #30B868;
 }
-
-.p .small, .p .big{
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 auto 30px;
-    display: block;
-}
-
 .small, .big{
     color: #FFFFFF;
+     line-height: 24px;
+     font-size: 18px;
 }
 .banner-content .two-btn{
     display: flex;
@@ -122,7 +117,7 @@ ul li a{
     gap: 16px;
 }
 
-.banner-content .two-btn .btn, .banner-content .two-btn .play{
+.banner-content .two-btn .btn, .banner-content .two-btn .play,.think-content .btn{
       max-width: 251px;
       display: flex;
       justify-content: center;
@@ -132,10 +127,11 @@ ul li a{
       color: #FFFFFF;
       padding: 16.5px;
       align-items: center;
+      margin-top: 32px;
       cursor: pointer;
 }
 
-.two-btn .btn img{
+.two-btn .btn img,.btn img{
     width: 15.63px;
     height: 13.13px;
 }
@@ -188,8 +184,9 @@ ul li a{
     max-width: 1360px;
 }
 .card-container div{
-    padding: 69.5px 24px 21px;
-    width: 322px;
+    padding: 69.5px 24px 21.5px;
+    width: 23.6%;
+    max-width: 322px;
     margin: 0 auto;
     border-radius: 6px;
     background-color: #FFFFFF;
@@ -210,12 +207,14 @@ ul li a{
 #brain{
     max-width: 1600px;
     background-color: #FFFFFF;
+    position: relative;
+    margin-top: -15px;
 }
 #brain .brain-container{
     display: flex;
     gap: 60px;
     max-width: 1360px;
-    margin: 120px;
+    padding: 120px;
 }
 .brain-container .brain-img{
     max-width: 600px;
@@ -253,6 +252,36 @@ ul li a{
     margin-bottom: 16px;
 }
 
+#think-more .think-container{
+    margin: 0px 120px 120px;
+    background-color: #F7F6F2;
+    padding: 80px 40px;
+}
+
+.think-container .think-content{
+    text-align: center;
+}
+.think-container .think-content h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #001931;
+    margin-bottom: 16px;
+}
+
+.think-container .think-content p{
+    font-size: 16px;
+    color: #627382;
+    line-height: 24px;
+    margin: 0px auto 24px;
+    max-width: 600px;
+}
+.think-container .think-content .btn{
+       margin: 0 auto;
+}
+.think-container .think-content .dot{
+    margin-top: 16px;
+    line-height: 20px;
+}
 footer {
     background-color: #001931;
 }
@@ -272,18 +301,34 @@ footer .foot .social{
     line-height: 28px;
     margin-bottom: 16px;
 }
-.social .social-icons a{
-    margin-right: 16px;
-}
 .social .social-icons i{
     background-color: #FFFFFF;
     border-radius: 50%;
     padding: 4.25px;
+    margin-right: 16px;
+    max-width: 20px;
+    max-height: 20px;
+    color: black;
 }
 
 hr{
     margin-top: 80px;
+    width: 85%;
     max-width: 1360px;
     color: #E5E7EB;
     opacity: 20%;
+}
+
+footer .copy{
+    font-size: 16px;
+    color: #FAFAFA;
+    line-height: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn:hover,.bt:hover,.play:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 4px 4px brown;
 }
