@@ -79,6 +79,7 @@ ul li a{
     display: flex;
     font-size: 16px;
     font-weight: 600;
+    max-width: 210px;
     color: #469165;
     background-color: #FFFFFF;
     border: none;
@@ -90,7 +91,7 @@ ul li a{
 
 .bt img{
     max-width: 16px;
-    max-height: 16px;
+    max-height: 18px;
     margin-right:6px ;
 }
 
@@ -328,7 +329,7 @@ footer .copy{
     text-align: center;
 }
 
-.btn:hover,.bt:hover,.play:hover,.social-icons a i:hover{
+.btn:hover,.play:hover,.social-icons a i:hover{
     transition: all 0.3s ease;
     transform: scale(1.05);
     box-shadow: 0px 4px 4px 4px brown;
