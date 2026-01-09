@@ -5,6 +5,7 @@
 }
 
 body{
+    max-width: 1600px;
     padding: 0;
     margin: 0;
 }
@@ -207,10 +208,7 @@ ul li a{
     padding: 14px;
 }
 #brain{
-    position: absolute;
-    left: 0px;
-    top: 1230px;
-    width: 1600px;
+    max-width: 1600px;
     background-color: #FFFFFF;
 }
 #brain .brain-container{
@@ -255,3 +253,37 @@ ul li a{
     margin-bottom: 16px;
 }
 
+footer {
+    background-color: #001931;
+}
+
+footer .foot{
+    padding: 120px 120px 30px 120px;
+}
+footer .foot .social{
+    display: flex;
+    gap: 1006px;
+    align-items: center;
+}
+ .social .social-icons h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+.social .social-icons a{
+    margin-right: 16px;
+}
+.social .social-icons i{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 4.25px;
+}
+
+hr{
+    margin-top: 80px;
+    max-width: 1360px;
+    color: #E5E7EB;
+    opacity: 20%;
+}
